@@ -1,13 +1,11 @@
 Proceso nprimo
 	Definir np Como entero;
-	escribir "escriba la última crifra del número";
-	escribir "(si termina en 2, y no es 2, escriba 0)";
+	escribir "escriba el nÃºmero para verificar si es primo";
 	Esperar 2 segundos;
-	esperar 2 segundos;
 	leer np;
-	si np=0 o np=4 o np=6 o np=8 o np=10 Entonces
-		Escribir "no es un número primo";
+	si np Mod 2=0 Entonces
+		Escribir "no es un nÃºmero primo";
 	SiNo
-		escribir "es un número primo";
+		escribir "es un nÃºmero primo";
 	FinSi
 FinProceso
