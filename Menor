@@ -1,0 +1,32 @@
+Proceso Menor
+	Definir n1, n2, n3 como Real;
+	Definir S como caracter;
+	Definir bien como logico;
+	S<-"z";
+	Repetir
+		Escribir "Ingrese 3 números para verificar cuál es el menor";
+		Leer n1, n2, n3;  bien<-falso;
+		Si n1<=n2 y n1<=n3 entonces
+			Escribir "El número menor es ", n1;
+		Sino
+			Si n2<=n3 y n2<=n1 entonces
+				Escribir "El número menor es ", n2;
+			Sino
+				Si n3<=n1 y n3<=n2 entonces
+					Escribir "El número menor es ", n3;
+				FinSi
+			FinSi
+		FinSi
+		Repetir
+			Escribir "¿Desea sacar el menor de otros 3 números? (Verdadero o falso)";
+			Leer S;
+			S<-Minusculas(S);
+			Si S="verdadero" o S="true" o S="falso" o S="false" entonces
+				bien<-verdadero;
+			Sino
+				Escribir "Hubo un error, intente otra vez.";
+			FinSi
+		Hasta que bien=verdadero
+	Hasta que S="falso" o S="false"
+	Escribir "Adiós";
+FinAlgoritmo
